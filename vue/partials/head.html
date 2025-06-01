@@ -1,0 +1,18 @@
+<meta charset="UTF-8">
+<link href="../../vue/style/base.css" rel="stylesheet">
+<link href="../../vue/style/lang_dropdown.css" rel="stylesheet">
+<link href="../../data/pictures/main/logo.png" rel="icon" type="image/x-icon">
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const placeholder = document.getElementById('placeholder');
+        const dropdown = document.getElementById('custom-select');
+
+        placeholder.addEventListener('click', function () {
+            if (dropdown.classList.contains('active')) {
+                dropdown.classList.remove('active')
+            } else {
+                dropdown.classList.add('active')
+            }
+        })
+    })
+</script>
