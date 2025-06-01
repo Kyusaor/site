@@ -1,0 +1,64 @@
+:root {
+    --header-black: #30323b;
+    --nav-fading-color: #5e6273;
+    --base-green: #3be535;
+    --base-darker-green: #10a20b;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    width: 80%;
+    margin: auto;
+    background-color: white;
+}
+
+#default-nav-menu {
+    padding: 20px 0 10px 0;
+    margin: auto;
+    background-image: linear-gradient(var(--header-black), var(--nav-fading-color));
+}
+
+.languageSelectOption {
+    width: 10px;
+    height: auto;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--header-black);
+    color: white;
+    padding: 0 5% 0 5%;
+}
+
+#logo {
+    max-height: 100px;
+    width: auto;
+    margin: 10px;
+}
+
+#default-nav-menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    overflow: auto;
+}
+
+#default-nav-menu a {
+    color: white;
+    flex-grow: 1;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: Verdana, sans-serif;
+}
+
+#default-nav-menu a:hover {
+    background-color: var(--nav-fading-color);
+}
