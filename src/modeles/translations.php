@@ -68,7 +68,7 @@ class TranslationManager
             if (isset($translat[$pathArray[$count]])) {
                 $translat = $translat[$pathArray[$count]];
                 $count++;
-            } else return "<missing_translation_error: $path>";
+            } else return "{missing_translation_error: $path}";
         }
         if ($getKeys)
             return array_keys($translat);
