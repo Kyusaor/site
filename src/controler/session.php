@@ -27,7 +27,10 @@ if (
 
     $currentDomain[0] = $currentLanguage;
     $_SESSION['language'] = $currentLanguage;
-    header('Location: http://' . implode('.', $currentDomain) . $_SERVER['PHP_SELF'] . $_SERVER["QUERY_STRING"]);
+    $redirectionPath = 'http://' . implode('.', $currentDomain) . $_SERVER['PHP_SELF'];
+    if (!empty($_SERVER["QUERY_STRING"]))
+        $redirectionPath .= '?' . $_SERVER["QUERY_STRING"];
+    header('Location: ' . $redirectionPath);
     exit();
 }
 
