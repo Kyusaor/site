@@ -2,6 +2,7 @@
 
 class TranslationManager
 {
+    public static string $defaultLanguage = 'en';
     private static TranslationManager $_instance;
     private static string $TRANSLATION_DIRECTORY_PATH = "../../data/translations/";
     private array $_translations = [];

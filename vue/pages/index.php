@@ -3,7 +3,7 @@ include '../../src/controler/session.php';
 $translations = $_SESSION['translations'];
 ?>
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="<?= $_SESSION['language'] ?>">
 
 <head>
     <?php include '../../vue/partials/head.html'; ?>
