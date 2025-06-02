@@ -73,7 +73,7 @@ class TranslationManager
         if ($getKeys)
             return array_keys($translat);
         else
-            return $translat;
+            return htmlspecialchars($translat);
     }
 }
 
