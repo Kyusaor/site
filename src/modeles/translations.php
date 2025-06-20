@@ -40,7 +40,8 @@ class TranslationManager
 
     public static function getInstance(): TranslationManager
     {
-        return TranslationManager::$_instance ?? TranslationManager::$_instance = new TranslationManager();
+        return new TranslationManager();
+        //TODO: uncomment this in the end        return TranslationManager::$_instance ?? TranslationManager::$_instance = new TranslationManager();
     }
 
     /**
